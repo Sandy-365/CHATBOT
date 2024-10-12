@@ -9,7 +9,7 @@ import PIL.Image
 app = Flask(__name__)
 
 # Configure the Google AI API
-api_key = os.getenv('GOOGLE_API_KEY', API_KEY)  # Use environment variable for API key
+api_key = os.getenv(API_KEY, API_KEY)  # Use environment variable for API key
 genai.configure(api_key=api_key)
 
 # Create the model
